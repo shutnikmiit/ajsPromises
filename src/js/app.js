@@ -2,7 +2,7 @@ import json from './parser.js';
 import read from './reader.js';
 import GameSaving from './gamesaving.js';
 
-let gameSave = new GameSaving('Boo');
+let gameSave = new GameSaving('Hit');
 
 export default class GameSavingLoader {
   load() {
