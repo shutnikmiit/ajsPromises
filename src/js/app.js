@@ -2,7 +2,7 @@ import json from './parser.js';
 import read from './reader.js';
 import GameSaving from './gamesaving.js';
 
-let gameSav = new GameSaving('Boo');
+let gameSave = new GameSaving('Boo');
 
 export default class GameSavingLoader {
   load() {
@@ -11,7 +11,7 @@ export default class GameSavingLoader {
       .then((resolve) => json(resolve))
       .then((saving) => {
         gameSav = JSON.parse(saving);
-        return gameSav;
+        return gameSave;
       })
       .catch((error) => { throw error; });
   }
