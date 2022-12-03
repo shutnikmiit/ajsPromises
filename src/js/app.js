@@ -10,7 +10,7 @@ export default class GameSavingLoader {
       .then((resolve) => resolve)
       .then((resolve) => json(resolve))
       .then((saving) => {
-        gameSav = JSON.parse(saving);
+        gameSave = JSON.parse(saving);
         return gameSave;
       })
       .catch((error) => { throw error; });
